@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Item from "./TodoItem";
 import TodoItem from "./TodoItem";
 
 export default class TodoList extends Component {
@@ -14,7 +13,7 @@ export default class TodoList extends Component {
               key={items.id}
               title={item.title}
               handleDelete={() => handleDelete(item.id)}
-              handleEdit={() => item.id}
+              handleEdit={() => handleEdit(item.id)}
             />
           );
         })}
